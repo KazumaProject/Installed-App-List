@@ -29,3 +29,4 @@ In sample, using this method in Adapter class that extends RecyclerView.Adapter<
 Source code available in sample directory.
 
 ## License
+Apache License 2.0
