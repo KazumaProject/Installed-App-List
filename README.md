@@ -25,6 +25,7 @@ implementation 'com.pythontaro.installed-app-list:installed-app-list:1.0.0'
         holder.appPackageName.setText(installedAppList.getInstalledApps().get(position).packageName);
     }
 ```
-
 In sample, using this method in Adapter class that extends RecyclerView.Adapter<Adapter.ViewHolder>.
-Source code available in sample directory
+Source code available in sample directory.
+
+## License
