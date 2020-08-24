@@ -13,3 +13,18 @@ This is a method that returns installed app's package names, labels and icons on
 ```gradle
 implementation 'com.pythontaro.installed-app-list:installed-app-list:1.0.0'
 ```
+
+## Usage
+
+```java
+@Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        installedAppList = new InstalledAppList(mContext);
+        holder.appIcon.setImageDrawable(installedAppList.getInstalledApps().get(position).appIcon);
+        holder.appLabel.setText(installedAppList.getInstalledApps().get(position).appLabel);
+        holder.appPackageName.setText(installedAppList.getInstalledApps().get(position).packageName);
+    }
+```
+
+In sample, using this method in Adapter class that extends RecyclerView.Adapter<Adapter.ViewHolder>.
+Source code available in sample directory
