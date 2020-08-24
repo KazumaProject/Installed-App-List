@@ -5,6 +5,10 @@ This is a method that returns installed app's package names, labels and icons on
 
 ## Overview
 
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/59742125/91056577-28f2c080-e5f4-11ea-8234-62b808f76115.gif"/>
+</p>
+
 ## Setup
 ```gradle
 implementation 'com.pythontaro.installed-app-list:installed-app-list:1.0.0'
