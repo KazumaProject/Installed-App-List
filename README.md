@@ -19,7 +19,7 @@ implementation 'com.pythontaro.installed-app-list:installed-app-list:1.0.0'
 ```java
 @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        installedAppList = new InstalledAppList(mContext);
+        InstalledAppList installedAppList = new InstalledAppList(mContext);
         holder.appIcon.setImageDrawable(installedAppList.getInstalledApps().get(position).appIcon);
         holder.appLabel.setText(installedAppList.getInstalledApps().get(position).appLabel);
         holder.appPackageName.setText(installedAppList.getInstalledApps().get(position).packageName);
